@@ -1,0 +1,32 @@
+name: Muscat Flight Price Tracker
+
+on:
+  schedule:
+    - cron: "0 5 * * *"    # runs once daily at 05:00 UTC (~9am Oman time)
+  workflow_dispatch: {}     # lets you trigger it manually from the Actions tab to test
+
+permissions:
+  contents: write   # needed so the bot can publish the updated price page
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python flight_bot.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+          AVIASALES_LINK: ${{ secrets.AVIASALES_LINK }}
+      - name: Publish updated price page
+        run: |
+          git config user.name "flight-bot"
+          git config user.email "flight-bot@users.noreply.github.com"
+          git add docs/
+          git diff --cached --quiet || git commit -m "Update flight price page"
+          git push
