@@ -33,7 +33,7 @@ DESTINATIONS = [
     ("CAI", "Cairo, Egypt"),
 ]
 CURRENCY = "usd"
-ALERT_DROP_PCT = 10.0            # flag a route if today's cheapest fare beats the trailing average by this much
+ALERT_DROP_PCT = 0.0           # flag a route if today's cheapest fare beats the trailing average by this much
 HISTORY_DAYS_FOR_AVERAGE = 7
 CHEAP_PRICES_URL = "http://api.travelpayouts.com/v1/prices/cheap"
 
