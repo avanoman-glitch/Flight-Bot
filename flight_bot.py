@@ -174,8 +174,12 @@ def render_page(history):
 
 
 def run():
+    HISTORY_STORE.parent.mkdir(parents=True, exist_ok=True)  # guarantee docs/ exists no matter what happens below
+
     if not TRAVELPAYOUTS_TOKEN:
         log.error("Missing TRAVELPAYOUTS_TOKEN; cannot query the API.")
+        save_history(load_history())
+        render_page(load_history())
         return
 
     history = load_history()
