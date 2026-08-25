@@ -33,7 +33,7 @@ DESTINATIONS = [
     ("CAI", "Cairo, Egypt"),
 ]
 CURRENCY = "usd"
-ALERT_DROP_PCT = 0.0           # flag a route if today's cheapest fare beats the trailing average by this much
+ALERT_DROP_PCT = 10.0            # flag a route if today's cheapest fare beats the trailing average by this much
 HISTORY_DAYS_FOR_AVERAGE = 7
 CHEAP_PRICES_URL = "http://api.travelpayouts.com/v1/prices/cheap"
 
@@ -173,8 +173,26 @@ def render_page(history):
     INDEX_HTML.write_text(html)
 
 
+TEST_MODE = os.environ.get("TEST_MODE", "false").lower() == "true"
+
+
 def run():
     HISTORY_STORE.parent.mkdir(parents=True, exist_ok=True)  # guarantee docs/ exists no matter what happens below
+
+    if TEST_MODE:
+        log.info("TEST_MODE is on — sending one test message and checking one route, then stopping.")
+        send_to_telegram("✅ Flight bot test message — Telegram delivery is working.")
+        if TRAVELPAYOUTS_TOKEN:
+            code, name = DESTINATIONS[0]
+            fare = fetch_cheapest(code)
+            if fare:
+                log.info("Test fetch succeeded: %s -> $%.0f on %s", name, fare["price"], fare.get("airline", "?"))
+                send_to_telegram(f"✅ Test fetch also worked: Muscat → {name} cheapest cached fare is ${fare['price']:.0f}.")
+            else:
+                log.info("Test fetch ran without error, but no cached fare exists for %s right now (normal).", name)
+        else:
+            log.warning("TRAVELPAYOUTS_TOKEN not set — skipped the fetch half of the test.")
+        return
 
     if not TRAVELPAYOUTS_TOKEN:
         log.error("Missing TRAVELPAYOUTS_TOKEN; cannot query the API.")
