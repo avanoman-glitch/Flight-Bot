@@ -2927,5 +2927,66 @@
         "duration_back": 220
       }
     }
+  },
+  {
+    "date": "2026-10-15",
+    "fetched_at": "2026-10-15 09:34 UTC",
+    "prices": {
+      "DEL": {
+        "airline": "IX",
+        "departure_at": "2026-10-18T02:50:00+04:00",
+        "return_at": "2026-10-25T09:50:00+05:30",
+        "expires_at": "2026-10-15T10:34:08Z",
+        "price": 287,
+        "flight_number": 442,
+        "duration": 1325,
+        "duration_to": 425,
+        "duration_back": 220
+      },
+      "MNL": {
+        "airline": "EY",
+        "departure_at": "2026-11-03T05:25:00+04:00",
+        "return_at": "2026-11-17T05:45:00+08:00",
+        "expires_at": "2026-10-15T10:34:08Z",
+        "price": 402,
+        "flight_number": 691,
+        "duration": 1965,
+        "duration_to": 580,
+        "duration_back": 630
+      },
+      "KHI": {
+        "airline": "EY",
+        "departure_at": "2026-10-15T23:50:00+04:00",
+        "return_at": "2026-10-22T12:05:00+05:00",
+        "expires_at": "2026-10-15T10:34:08Z",
+        "price": 202,
+        "flight_number": 697,
+        "duration": 2030,
+        "duration_to": 210,
+        "duration_back": 205
+      },
+      "DAC": {
+        "airline": "G9",
+        "departure_at": "2026-11-11T19:35:00+04:00",
+        "return_at": "2026-11-30T09:05:00+06:00",
+        "expires_at": "2026-10-15T10:34:09Z",
+        "price": 363,
+        "flight_number": 119,
+        "duration": 2165,
+        "duration_to": 325,
+        "duration_back": 405
+      },
+      "CAI": {
+        "airline": "MS",
+        "departure_at": "2026-10-18T21:25:00+04:00",
+        "return_at": "2026-10-25T16:10:00+02:00",
+        "expires_at": "2026-10-15T10:34:09Z",
+        "price": 261,
+        "flight_number": 931,
+        "duration": 470,
+        "duration_to": 250,
+        "duration_back": 220
+      }
+    }
   }
 ]
