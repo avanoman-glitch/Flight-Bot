@@ -5029,5 +5029,66 @@
         "duration_back": 255
       }
     }
+  },
+  {
+    "date": "2026-11-19",
+    "fetched_at": "2026-11-19 14:04 UTC",
+    "prices": {
+      "DEL": {
+        "airline": "6E",
+        "departure_at": "2026-12-08T00:05:00+04:00",
+        "return_at": "2026-12-08T22:30:00+05:30",
+        "expires_at": "2026-11-19T15:04:06Z",
+        "price": 340,
+        "flight_number": 1268,
+        "duration": 2465,
+        "duration_to": 295,
+        "duration_back": 350
+      },
+      "MNL": {
+        "airline": "QR",
+        "departure_at": "2026-11-22T12:35:00+04:00",
+        "return_at": "2026-11-30T05:45:00+08:00",
+        "expires_at": "2026-11-19T15:04:06Z",
+        "price": 641,
+        "flight_number": 1127,
+        "duration": 3240,
+        "duration_to": 710,
+        "duration_back": 630
+      },
+      "KHI": {
+        "airline": "EY",
+        "departure_at": "2027-02-22T11:50:00+04:00",
+        "return_at": "2027-02-26T06:25:00+05:00",
+        "expires_at": "2026-11-19T15:04:06Z",
+        "price": 198,
+        "flight_number": 693,
+        "duration": 1145,
+        "duration_to": 195,
+        "duration_back": 210
+      },
+      "DAC": {
+        "airline": "EK",
+        "departure_at": "2026-12-05T11:10:00+04:00",
+        "return_at": "2026-12-13T18:45:00+06:00",
+        "expires_at": "2026-11-19T15:04:07Z",
+        "price": 383,
+        "flight_number": 863,
+        "duration": 1235,
+        "duration_to": 330,
+        "duration_back": 405
+      },
+      "CAI": {
+        "airline": "EY",
+        "departure_at": "2026-11-21T11:50:00+04:00",
+        "return_at": "2026-11-28T07:25:00+02:00",
+        "expires_at": "2026-11-19T15:04:07Z",
+        "price": 246,
+        "flight_number": 693,
+        "duration": 3110,
+        "duration_to": 315,
+        "duration_back": 270
+      }
+    }
   }
 ]
