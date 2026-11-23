@@ -5273,5 +5273,66 @@
         "duration_back": 270
       }
     }
+  },
+  {
+    "date": "2026-11-23",
+    "fetched_at": "2026-11-23 15:37 UTC",
+    "prices": {
+      "DEL": {
+        "airline": "WY",
+        "departure_at": "2027-01-04T04:35:00+04:00",
+        "return_at": "2027-01-26T15:50:00+05:30",
+        "expires_at": "2026-11-23T16:37:31Z",
+        "price": 331,
+        "flight_number": 241,
+        "duration": 395,
+        "duration_to": 175,
+        "duration_back": 220
+      },
+      "MNL": {
+        "airline": "IX",
+        "departure_at": "2026-12-09T23:45:00+04:00",
+        "return_at": "2026-12-20T22:30:00+08:00",
+        "expires_at": "2026-11-23T16:37:31Z",
+        "price": 834,
+        "flight_number": 6580,
+        "duration": 2720,
+        "duration_to": 710,
+        "duration_back": 750
+      },
+      "KHI": {
+        "airline": "EY",
+        "departure_at": "2027-02-22T11:50:00+04:00",
+        "return_at": "2027-02-26T06:25:00+05:00",
+        "expires_at": "2026-11-23T16:37:31Z",
+        "price": 198,
+        "flight_number": 693,
+        "duration": 1145,
+        "duration_to": 195,
+        "duration_back": 210
+      },
+      "DAC": {
+        "airline": "EK",
+        "departure_at": "2027-01-02T09:20:00+04:00",
+        "return_at": "2027-01-20T12:30:00+06:00",
+        "expires_at": "2026-11-23T16:37:31Z",
+        "price": 379,
+        "flight_number": 2035,
+        "duration": 1500,
+        "duration_to": 335,
+        "duration_back": 395
+      },
+      "CAI": {
+        "airline": "EY",
+        "departure_at": "2027-01-01T11:50:00+04:00",
+        "return_at": "2027-01-29T19:00:00+02:00",
+        "expires_at": "2026-11-23T16:37:32Z",
+        "price": 267,
+        "flight_number": 693,
+        "duration": 1230,
+        "duration_to": 320,
+        "duration_back": 270
+      }
+    }
   }
 ]
