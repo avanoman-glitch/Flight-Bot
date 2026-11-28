@@ -1,55 +1,5 @@
 [
   {
-    "date": "2026-08-30",
-    "fetched_at": "2026-08-30 05:04 UTC",
-    "prices": {
-      "DEL": {
-        "airline": "GF",
-        "departure_at": "2026-10-02T23:55:00+04:00",
-        "return_at": "2026-11-07T05:40:00+05:30",
-        "expires_at": "2026-08-30T06:03:59Z",
-        "price": 223,
-        "flight_number": 567,
-        "duration": 2025,
-        "duration_to": 340,
-        "duration_back": 395
-      },
-      "MNL": {
-        "airline": "GF",
-        "departure_at": "2027-01-07T19:10:00+04:00",
-        "return_at": "2027-02-01T16:25:00+08:00",
-        "expires_at": "2026-08-30T06:03:59Z",
-        "price": 538,
-        "flight_number": 565,
-        "duration": 3025,
-        "duration_to": 625,
-        "duration_back": 705
-      },
-      "DAC": {
-        "airline": "IX",
-        "departure_at": "2026-10-16T00:15:00+04:00",
-        "return_at": "2026-10-23T11:45:00+06:00",
-        "expires_at": "2026-08-30T06:04:00Z",
-        "price": 259,
-        "flight_number": 236,
-        "duration": 1320,
-        "duration_to": 355,
-        "duration_back": 360
-      },
-      "CAI": {
-        "airline": "EY",
-        "departure_at": "2026-11-15T05:25:00+04:00",
-        "return_at": "2026-11-19T19:00:00+02:00",
-        "expires_at": "2026-08-30T06:04:00Z",
-        "price": 221,
-        "flight_number": 691,
-        "duration": 920,
-        "duration_to": 310,
-        "duration_back": 270
-      }
-    }
-  },
-  {
     "date": "2026-08-31",
     "fetched_at": "2026-08-31 05:04 UTC",
     "prices": {
@@ -5360,6 +5310,67 @@
         "departure_at": "2026-11-29T10:10:00+04:00",
         "return_at": "2026-12-10T01:55:00+02:00",
         "expires_at": "2026-11-27T15:37:53Z",
+        "price": 258,
+        "flight_number": 113,
+        "duration": 1905,
+        "duration_to": 315,
+        "duration_back": 255
+      }
+    }
+  },
+  {
+    "date": "2026-11-28",
+    "fetched_at": "2026-11-28 13:49 UTC",
+    "prices": {
+      "DEL": {
+        "airline": "GF",
+        "departure_at": "2027-01-20T23:55:00+04:00",
+        "return_at": "2027-01-31T05:40:00+05:30",
+        "expires_at": "2026-11-28T14:49:32Z",
+        "price": 316,
+        "flight_number": 567,
+        "duration": 2300,
+        "duration_to": 335,
+        "duration_back": 395
+      },
+      "MNL": {
+        "airline": "EY",
+        "departure_at": "2026-12-01T23:50:00+04:00",
+        "return_at": "2026-12-16T05:45:00+08:00",
+        "expires_at": "2026-11-28T14:49:33Z",
+        "price": 749,
+        "flight_number": 697,
+        "duration": 3620,
+        "duration_to": 670,
+        "duration_back": 630
+      },
+      "KHI": {
+        "airline": "EY",
+        "departure_at": "2026-11-30T23:50:00+04:00",
+        "return_at": "2027-01-10T06:25:00+05:00",
+        "expires_at": "2026-11-28T14:49:33Z",
+        "price": 196,
+        "flight_number": 697,
+        "duration": 1875,
+        "duration_to": 205,
+        "duration_back": 210
+      },
+      "DAC": {
+        "airline": "GF",
+        "departure_at": "2027-03-31T07:30:00+04:00",
+        "return_at": "2027-05-29T09:55:00+06:00",
+        "expires_at": "2026-11-28T14:49:33Z",
+        "price": 327,
+        "flight_number": 561,
+        "duration": 2320,
+        "duration_to": 420,
+        "duration_back": 425
+      },
+      "CAI": {
+        "airline": "G9",
+        "departure_at": "2026-11-29T10:10:00+04:00",
+        "return_at": "2026-12-10T01:55:00+02:00",
+        "expires_at": "2026-11-28T14:49:33Z",
         "price": 258,
         "flight_number": 113,
         "duration": 1905,
